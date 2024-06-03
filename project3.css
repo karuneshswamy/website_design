@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    width: 100%;
+    height: 70px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+#navpart1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.circle{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    display: flex;
+    border-radius: 50%;
+}
+
+#navpart2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+}
+
+#navpart2 h4{
+font-size: 17px;
+font-weight: 400;
+}
+
+#navpart2 h4 span{
+    color: grey;
+    margin-left: 12px;
+}
+
+#nav2{
+    height: 70px;
+    width: 100%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 0 35px;
+}
+#nav2 h3{
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#content{
+    width: 100%;
+    height:calc(100% - 140px);
+    /* background-color:brown; */
+}
+#textcontent{
+    height:45%;
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+#textcontent::-webkit-scrollbar{
+    background-color: transparent;
+    height: 5px;
+    width: 2px;
+}
+#textcontent::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+
+
+.elem{
+    flex-shrink: 0;
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.elem h1{
+ font-size: 100px;
+ font-weight: 200;
+}
+
+#imagecontent{
+    height: 60%;
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+    overflow-x: auto;
+}
+#imagecontent::-webkit-scrollbar{
+    display: none;
+}
+#imagecontent img{
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
